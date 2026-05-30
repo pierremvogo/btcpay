@@ -17,7 +17,7 @@ import {
 import { Request } from 'express';
 import { BtcpayService } from './btcpay.service';
 import { CreateBtcpayDto } from './dto/create-btcpay.dto';
-
+//controller
 @ApiTags('BTCPay')
 @Controller('btcpay')
 export class BtcpayController {
