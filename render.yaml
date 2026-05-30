@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: disktro-backend
+    env: docker
+    plan: free # Free Render pour ton backend
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: DATABASE_URL
+        value: 'postgresql://neondb_owner:npg_xBTZwU4O8SQf@ep-snowy-band-alja5k35-pooler.c-3.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
